@@ -2,7 +2,7 @@
 
 문서의 의미와 기술적 정확성을 보존하며 명확한 한국어를 작성·교정하는 AI 에이전트 스킬입니다. 문서 작성, 번역, 요약과 상세 문장 교정에 사용합니다.
 
-- 배포 버전: **1.0.3**
+- 배포 버전: **1.0.4**
 - 스킬 이름: `korean-writing`
 - 라이선스: [MIT](LICENSE)
 
@@ -27,12 +27,13 @@
 
 - 설명문은 `~합니다/~습니다`, 규정과 지침은 `~한다`로 작성합니다. 절차는 실행할 행동을 설명하고, 부탁이나 권고를 의무로 바꾸지 않습니다.
 - 누가 무엇을 하는지, 어떤 조건에서 가능한지, 결과가 다음 행동에 어떻게 사용되는지 문맥에 필요한 내용을 적습니다. 글을 짧게 쓰려고 필요한 설명을 생략하거나, 어려운 말을 다른 추상적인 말로 바꾸는 것만으로 설명을 끝내지 않습니다.
+- 문장과 문단을 이어 읽으며 앞의 설명을 다음 문장이 어떻게 이어받는지 확인합니다. 내용에 따라 조건·예외·비교·이유·예시·후속 행동을 이어 설명합니다. 연결어 없이도 자연스러우면 그대로 쓰며, `~다`나 `~습니다`가 반복된다는 이유만으로 고치지 않습니다.
 - 사실, 수치, 조건, 인용과 기술적 의미를 보존합니다. 가능성을 확인된 사실처럼 쓰지 않으며, 원문에 없는 정보를 만들어 넣지 않습니다.
 - 독자에게 통용되는 용어를 사용합니다. 생소하거나 뜻이 모호한 용어는 실제 동작이나 역할을 설명합니다. 권한은 이름이나 식별자와 허용 동작을 명시합니다.
 - 새 설명문에는 em dash와 en dash를 사용하지 않습니다. 괄호와 약어 풀이는 뜻을 이해하거나 화면·코드의 명칭과 대조하는 데 필요한 경우에 사용합니다.
 - 보고서, PPT, 메일, 매뉴얼 등 문서 종류에 맞춰 작성합니다. 모든 문서의 분량이나 목차를 하나로 고정하지 않습니다. 제목이나 목록을 짧게 쓰더라도 뜻을 이해하는 데 필요한 조건은 남깁니다.
 
-문체·표기·어휘의 자세한 규칙은 [공통 스타일](references/house-style.md), 생략된 설명과 문장 연결을 검토하는 방법은 [문장 교정](references/prose.md), 문서 종류별 작성 방식은 [문서 형식](references/document-style.md)에서 확인할 수 있습니다. [SKILL.md](SKILL.md)는 작업에 필요한 참조 파일을 선택하는 방법을 안내합니다.
+문체·표기·어휘의 자세한 규칙은 [공통 스타일](references/house-style.md), 생략된 설명과 문장·문단 연결을 검토하는 방법은 [문장 교정](references/prose.md), 문서 종류별 작성 방식은 [문서 형식](references/document-style.md)에서 확인할 수 있습니다. [SKILL.md](SKILL.md)는 작업에 필요한 참조 파일을 선택하는 방법을 안내합니다.
 
 `실제`가 강조만 더하면 생략할 수 있지만, 모의훈련과 실제 사고를 구분할 때는 유지합니다. 약어 풀이도 예상 독자에게 필요한 경우에 추가합니다.
 
@@ -40,10 +41,10 @@
 
 ### Codex의 프로젝트별 설치
 
-사용할 프로젝트의 루트에서 다음 명령으로 `v1.0.3` 버전을 설치할 수 있습니다. Git이 필요하며, 설치 대상 폴더가 이미 있는 경우에는 기존 내용을 먼저 확인합니다.
+사용할 프로젝트의 루트에서 다음 명령으로 `v1.0.4` 버전을 설치할 수 있습니다. Git이 필요하며, 설치 대상 폴더가 이미 있는 경우에는 기존 내용을 먼저 확인합니다.
 
 ```sh
-git clone --branch v1.0.3 --depth 1 https://github.com/zeri-k/korean-writing-skill.git .agents/skills/korean-writing
+git clone --branch v1.0.4 --depth 1 https://github.com/zeri-k/korean-writing-skill.git .agents/skills/korean-writing
 ```
 
 설치 결과는 다음과 같습니다.
@@ -95,7 +96,7 @@ $korean-writing
 | [SKILL.md](SKILL.md) | 적용 범위, 참조 문서 선택과 공통 판단 기준 |
 | [house-style.md](references/house-style.md) | 별도 요청이 없을 때 따르는 문체·표기·어휘 규칙 |
 | [document-style.md](references/document-style.md) | 문서 목적에 따른 내용 선택과 형식 |
-| [prose.md](references/prose.md) | 문장 관계, 어순과 군더더기 검토 |
+| [prose.md](references/prose.md) | 어순, 문장·문단의 연결과 군더더기 검토 |
 | [terminology.md](references/terminology.md) | 기술 용어, 약어와 대상의 명칭 |
 | [evidence.md](references/evidence.md) | 근거로 확인된 사실과 가능성, 활동 시점과 범위의 구분 |
 | [numbers.md](references/numbers.md) | 집계 수치, 비율과 비교 기준 |
@@ -104,7 +105,7 @@ $korean-writing
 
 ## 버전과 변경 제안
 
-배포 버전은 [VERSION](VERSION)과 `SKILL.md`의 `metadata.version`에 기록하며, Git 태그는 `v1.0.3` 형식을 사용합니다. 변경 이력은 [CHANGELOG.md](CHANGELOG.md)에 기록합니다.
+배포 버전은 [VERSION](VERSION)과 `SKILL.md`의 `metadata.version`에 기록하며, Git 태그는 `v1.0.4` 형식을 사용합니다. 변경 이력은 [CHANGELOG.md](CHANGELOG.md)에 기록합니다.
 
 `KOREAN-WRITING-COMMON`은 공통 스타일 본문의 버전을 식별하며, 배포 버전과 별도로 관리합니다. 현재 값은 `1.0.1`입니다. 에이전트가 현재 대화에서 같은 식별자와 공통 스타일 본문을 함께 확인할 수 있으면 파일을 다시 읽지 않고 사용합니다. 이전에 읽었다는 기록만 남아 있거나 식별자가 다르면 파일을 다시 읽습니다. 공통 스타일 본문을 수정할 때는 식별자를 바꾸고 `SKILL.md`와 `house-style.md`에 같은 값을 기록합니다.
 
