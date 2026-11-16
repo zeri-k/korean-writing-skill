@@ -3,7 +3,7 @@ name: korean-writing
 description: "한국어 문서의 작성, 번역, 요약과 교정에 사용한다. 보고서, PPT, 매뉴얼, 메일 등의 문장과 의미를 검토한다. 일반 질의응답과 단순 맞춤법 확인에는 자동 적용하지 않으며, 스킬을 명시하거나 상세 교정을 요청하면 짧은 문장에도 적용한다."
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # 한국어 작문과 교정
@@ -20,7 +20,7 @@ metadata:
 |---|---|
 | 문서 초안이나 기존 문서의 제목, 불릿, 본문 문체와 형식을 작성 또는 교정 | [문서 형식](references/document-style.md) |
 | 문단 작성, 번역이나 요약, 어순과 문장 관계를 다듬는 상세 교정 | [문장 교정](references/prose.md) |
-| 기술 개념의 설명, 용어 선택과 약어 풀이, 사람이나 저장 대상의 역할 구분 | [기술 용어](references/terminology.md) |
+| 기술 개념의 설명, 한국어·영어·한글 음역 선택과 약어 풀이, 사람이나 저장 대상의 역할 구분 | [기술 용어](references/terminology.md) |
 | 원인과 영향에 관한 주장, 활동의 시점·상태·범위, 사례의 해석, 가능성과 확인 결과의 구분 | [근거와 사례](references/evidence.md) |
 | 집계 수치, 비율, 증감률이나 분포를 제시하거나 비교 | [수치와 비교](references/numbers.md) |
 | 실행 절차, 코드와 설명의 대응, 단계 사이의 입력과 결과 연결 | [코드와 절차](references/procedures.md) |
