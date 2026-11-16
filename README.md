@@ -2,7 +2,7 @@
 
 문서의 의미와 기술적 정확성을 보존하며 명확한 한국어를 작성·교정하는 AI 에이전트 스킬입니다. 문서 작성, 번역, 요약과 상세 문장 교정에 사용합니다.
 
-- 배포 버전: **1.0.1**
+- 배포 버전: **1.0.2**
 - 스킬 이름: `korean-writing`
 - 라이선스: [MIT](LICENSE)
 
@@ -12,6 +12,7 @@
 - 대상과 수행 동작, 근거와 결과 사이의 관계를 명확히 설명합니다.
 - 문서 목적과 예상 독자에 맞춰 표현, 설명 깊이와 약어 풀이를 조정합니다.
 - 기술 용어는 해당 분야와 독자에게 통용되는 한국어, 영어 또는 한글 음역을 선택합니다.
+- 권한 설명에는 권한 이름이나 식별자와 허용 동작을 명시하며, 확인되지 않은 권한 범위를 추정하지 않습니다.
 - 과장과 불필요한 강조를 줄이고, 확인한 결과와 가능성·추정을 구분합니다.
 - 사용자 수정본을 후속 교정의 기준으로 삼습니다.
 - 작업에 필요한 참조 문서만 읽도록 구성되어 있습니다.
@@ -28,10 +29,10 @@
 
 ### Codex의 프로젝트별 설치
 
-사용할 프로젝트의 루트에서 다음 명령으로 `v1.0.1`을 설치할 수 있습니다. Git이 필요하며, 설치 대상 폴더가 이미 있는 경우에는 기존 내용을 먼저 확인합니다.
+사용할 프로젝트의 루트에서 다음 명령으로 `v1.0.2` 버전을 설치할 수 있습니다. Git이 필요하며, 설치 대상 폴더가 이미 있는 경우에는 기존 내용을 먼저 확인합니다.
 
 ```sh
-git clone --branch v1.0.1 --depth 1 https://github.com/zeri-k/korean-writing-skill.git .agents/skills/korean-writing
+git clone --branch v1.0.2 --depth 1 https://github.com/zeri-k/korean-writing-skill.git .agents/skills/korean-writing
 ```
 
 설치 결과는 다음과 같습니다.
@@ -91,7 +92,7 @@ $korean-writing
 
 ## 버전과 변경 제안
 
-배포 버전은 [VERSION](VERSION)과 `SKILL.md`의 `metadata.version`에 기록하며, Git 태그는 `v1.0.1` 형식을 사용합니다. 변경 이력은 [CHANGELOG.md](CHANGELOG.md)에 기록합니다. `KOREAN-WRITING-COMMON` 식별자는 같은 공통 스타일 본문을 중복해서 읽지 않기 위한 기준이므로, 공통 스타일을 수정할 때는 `SKILL.md`와 `house-style.md`의 식별자를 함께 확인합니다.
+배포 버전은 [VERSION](VERSION)과 `SKILL.md`의 `metadata.version`에 기록하며, Git 태그는 `v1.0.2` 형식을 사용합니다. 변경 이력은 [CHANGELOG.md](CHANGELOG.md)에 기록합니다. `KOREAN-WRITING-COMMON` 식별자는 같은 공통 스타일 본문을 중복해서 읽지 않기 위한 기준이므로, 공통 스타일을 수정할 때는 `SKILL.md`와 `house-style.md`의 식별자를 함께 확인합니다.
 
 변경 제안에는 원문, 의도한 의미와 예상 독자, 문제가 된 표현을 포함하면 판단에 도움이 됩니다. 한 문서의 편집 선호를 모든 문서에 적용하는 규칙으로 확대하지 않는 것을 원칙으로 합니다.
 
