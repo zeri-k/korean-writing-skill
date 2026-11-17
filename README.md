@@ -2,7 +2,7 @@
 
 문서의 의미와 기술적 정확성을 보존하며 명확한 한국어를 작성·교정하는 AI 에이전트 스킬입니다. 문서 작성, 번역, 요약과 상세 문장 교정에 사용합니다.
 
-- 로컬 버전: **1.0.5** (이번 수정본은 미게시)
+- 로컬 버전: **1.1.0** (이번 수정본은 미게시)
 - 스킬 이름: `korean-writing`
 - 라이선스: [MIT](LICENSE)
 
@@ -97,11 +97,16 @@ $korean-writing
 | [house-style.md](references/house-style.md) | 별도 요청이 없을 때 따르는 문체·표기·어휘 규칙 |
 | [document-style.md](references/document-style.md) | 문서 목적에 따른 내용 선택과 형식 |
 | [prose.md](references/prose.md) | 어순, 문장·문단의 연결과 군더더기 검토 |
+| [orthography.md](references/orthography.md) | 맞춤법 오류, 허용 표기와 문체 선호의 구분 |
 | [terminology.md](references/terminology.md) | 기술 용어, 약어와 대상의 명칭 |
 | [evidence.md](references/evidence.md) | 근거로 확인된 사실과 가능성, 활동 시점과 범위의 구분 |
 | [numbers.md](references/numbers.md) | 집계 수치, 비율과 비교 기준 |
 | [procedures.md](references/procedures.md) | 단계별 입력을 얻는 위치, 코드가 수행하는 동작과 결과의 설명 |
 | [presentation.md](references/presentation.md) | PPT 발표 노트와 발표 대본 |
+
+## 변경 검증
+
+실제 문장 문제, 정상 표현, 맞춤법의 허용 범위와 근거 확인 범위를 비교하는 22개 입력을 [evals/inputs.json](evals/inputs.json)에 정리했습니다. [검증 방법](evals/README.md)에 따라 같은 입력을 수정 전후 스킬로 각각 처리하고 의미를 비교합니다. 코드·식별자·링크 보존 검사는 문장 품질 판정을 대신하지 않습니다. 평가 자료는 일반 작성 작업에서 읽는 참조에 포함하지 않습니다.
 
 ## 버전과 변경 제안
 
