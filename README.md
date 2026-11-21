@@ -83,6 +83,8 @@ $korean-writing
 
 [SKILL.md](SKILL.md)는 스킬의 적용 범위와 참조 선택 기준을 담고 있습니다. `references/`에는 문장, 문서 형식, 기술 용어, 근거와 수치 등을 검토하는 세부 기준이 있습니다.
 
+스킬 수정 후 실제 교정 행동을 비교하는 방법과 사례는 [교정 행동 회귀 시험](tests/behavioral/README.md)에 있습니다.
+
 ## 버전과 변경 제안
 
 현재 버전은 [VERSION](VERSION), 변경 이력은 [CHANGELOG.md](CHANGELOG.md)에서 확인할 수 있습니다.
