@@ -2,7 +2,7 @@
 
 원문의 의미와 기술적 내용을 보존하며 한국어를 작성·교정하는 AI 에이전트 스킬입니다. 문서 작성, 번역, 요약과 상세 문장 교정에 사용합니다.
 
-- 버전: **1.0.7**
+- 버전: **1.0.8**
 - 스킬 이름: `korean-writing`
 - 라이선스: [MIT](LICENSE)
 
@@ -31,10 +31,10 @@
 
 ### Codex의 프로젝트별 설치
 
-사용할 프로젝트의 루트에서 다음 명령으로 `v1.0.7`을 설치할 수 있습니다. Git이 필요하며, 설치 대상 폴더가 이미 있는 경우에는 기존 내용을 먼저 확인합니다.
+사용할 프로젝트의 루트에서 다음 명령으로 `v1.0.8`을 설치할 수 있습니다. Git이 필요하며, 설치 대상 폴더가 이미 있는 경우에는 기존 내용을 먼저 확인합니다.
 
 ```sh
-git clone --branch v1.0.7 --depth 1 https://github.com/zeri-k/korean-writing-skill.git .agents/skills/korean-writing
+git clone --branch v1.0.8 --depth 1 https://github.com/zeri-k/korean-writing-skill.git .agents/skills/korean-writing
 ```
 
 설치 결과는 다음과 같습니다.
